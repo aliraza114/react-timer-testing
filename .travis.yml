@@ -18,3 +18,4 @@ deploy:
   project: ./build/
 
 on: 
+  branch: master
