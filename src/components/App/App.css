@@ -1,0 +1,76 @@
+.container {
+	height: 100vh;
+	width: 100vw;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	background-color: #5e85a2;
+}
+
+.button-container {
+	flex: 1 1 auto;
+	text-align: center;
+	margin: 0px 20px;
+	font-size: 16px;
+	background-color: #2E3664;
+	color: white;
+	border: none;
+	padding: 8px;
+}
+
+.button-container:hover {
+	cursor: pointer;
+	background-color: rgb(119, 119, 156);
+}
+
+.time-display {
+	font-size: 5em;
+	display: flex;
+	justify-content: center;
+	margin-left: auto;
+	flex-direction: column;
+	align-items: center;
+	color: white;
+	padding: 5px;
+	background-color: #464d79;
+	border-radius: 25px 25px 0px 0px;
+}
+
+.timer-button-container {
+	background-color: #2E3664;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	height: 30%;
+	padding: 5px;
+	border-radius: 0px 0px 25px 25px;
+}
+
+.button-class {
+	color: white;
+	background-color: purple;
+}
+
+:root {
+	--timer-background-color: #ffffff;
+	--timer-border: 1px solid #000000;
+	--timer-height: 70%;
+	--timer-width: 70%;
+	--button-border: 3px solid #000000;
+	--button-text-size: 2em;
+}
+
+body,
+div,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+@media screen and (max-width: 1024px) {
+	:root {
+		--timer-height: 100%;
+		--timer-width: 100%;
+		--button-text-size: 4em;
+	}
+}
