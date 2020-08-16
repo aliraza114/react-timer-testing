@@ -9,7 +9,7 @@ cache:
 script:
   - npm install
   - npm test
-  - CI=false npm run build
+  - npm run build
 
 deploy:
   provider: surge
