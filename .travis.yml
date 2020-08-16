@@ -14,7 +14,7 @@ script:
 deploy:
   provider: surge
   skip_cleanup: true
-  domain: aliraza-testing-timer.surge.sh
+  domain: http://aliraza-testing-timer.surge.sh/
   project: ./build/
 
 on: 
