@@ -28,11 +28,9 @@ class Timer extends Component<any, any> {
         }));
       }
       if (seconds === 0) {
-        {
-          this.setState((props: Partial<any> = {}) => ({
-            seconds: seconds + 1,
-          }));
-        }
+        this.setState((props: Partial<any> = {}) => ({
+          seconds: seconds + 1,
+        }));
       }
       else if (seconds >= 59) {
         this.setState((props: Partial<any> = {}) => ({
@@ -67,12 +65,12 @@ class Timer extends Component<any, any> {
           <TimerButton
             buttonAction={this.startTimer}
             buttonValue={'Start'}
-          /> 
-            <TimerButton
-              buttonAction={this.stopTimer}
-              buttonValue={'Stop'}
-            />
-          
+          />
+          <TimerButton
+            buttonAction={this.stopTimer}
+            buttonValue={'Stop'}
+          />
+
           <TimerButton
             buttonAction={this.resetTimer}
             buttonValue={'Reset'}
