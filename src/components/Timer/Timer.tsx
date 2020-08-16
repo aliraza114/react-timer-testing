@@ -1,4 +1,4 @@
-import React, { Component, useState, MouseEvent } from 'react';
+import React, { Component } from 'react';
 import '../App/App.css'
 import TimerButton from '../TimerButton/TimerButton';
 let myInterval: any
@@ -6,8 +6,6 @@ class Timer extends Component<any, any> {
   constructor(props: any) {
     super(props);
     this.state = {
-      isStart: false,
-      isReset: false,
       minutes: 0,
       seconds: 0,
       isOn: false,
@@ -58,7 +56,7 @@ class Timer extends Component<any, any> {
   }
 
   render = () => {
-    const { minutes, seconds, isStart, isReset } = this.state;
+    const { minutes, seconds } = this.state;
 
     return (
       <div className="timer-container">
